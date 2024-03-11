@@ -86,15 +86,15 @@ const password = useRef(null);
     <div>
       <Header />
       <div className="absolute">
-        <img
+        <img className="h-screen object-cover md:w-screen md:object-cover"
           src={BG_URL}
-          alt=""
+          alt="logo"
         />
       </div>
 
       <form onSubmit={(e)=>{
         e.preventDefault()
-      }} className="absolute rounded-lg bg-black p-12 w-4/12 my-36 mx-auto right-0 left-0 text-white bg-opacity-80">
+      }} className="absolute rounded-lg bg-black p-12 w-full md:w-4/12 my-36 mx-auto right-0 left-0 text-white bg-opacity-80">
         <h1 className="font-bold text-3xl py-4 ">
         
          {isSignInForm?"Sign In " : "Sign Up"}

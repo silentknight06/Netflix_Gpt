@@ -9,7 +9,8 @@ export const API_OPTIONS = {
   headers: {
     accept: "application/json",
     Authorization:
-      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5MzBhYjk1MjgwZWVjZTJmNTMwM2E2MzYxMjkyOWMwYyIsInN1YiI6IjY1ZTVjMWY5MDA2YjAxMDE2M2EyMWNmYyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.r5bY0U1HbQWi9KwViPTCgZ6Bbds_NaK8xi5CB9R8VVo",
+      // "Bearer" +process.env.REACT_APP_TMDB_KEY,
+       "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5MzBhYjk1MjgwZWVjZTJmNTMwM2E2MzYxMjkyOWMwYyIsInN1YiI6IjY1ZTVjMWY5MDA2YjAxMDE2M2EyMWNmYyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.r5bY0U1HbQWi9KwViPTCgZ6Bbds_NaK8xi5CB9R8VVo"
   },
 };
 
@@ -21,4 +22,8 @@ export const BG_URL =
                                    {identifier:"hindi", name:"hindi"},
                                     {identifier:"russian", name:"russian"},
  
-]
+];
+
+
+
+export const OPENAI_KEY = process.env.REACT_APP_OPENAI_KEY_val;
